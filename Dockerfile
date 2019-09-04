@@ -8,7 +8,7 @@ RUN apt-get install curl git nano wget -y
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install nodejs -y
 # angular cli
-RUN npm install -g @angular/cli@8.1.0
+RUN echo -ne '\n'|npm install -g @angular/cli@8.1.0
 RUN apt-get clean
 # chrome
 RUN wget http://www.slimjetbrowser.com/chrome/files/75.0.3770.80/google-chrome-stable_current_amd64.deb &&\
