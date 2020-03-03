@@ -5,7 +5,7 @@ FROM ubuntu:18.04
 RUN apt-get update
 RUN apt-get install curl git nano wget sshpass -y
 # nodejs 11
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install nodejs -y
 # angular cli
 RUN echo -ne '\n'|npm install -g @angular/cli@9.0.2 firebase-tools
